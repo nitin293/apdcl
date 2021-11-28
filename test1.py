@@ -8,6 +8,7 @@ row_s = int(input("Enter the Starting Rows : "))
 row_e = int(input("Enter the Ending Rows : "))
 
 
+#imported .csv file
 #Selecting Specific Rows and Columns
 sel_c = pd.read_csv('sample.csv', usecols = [col_name])
 sel_r = sel_c.loc[row_s:row_e]
