@@ -11,8 +11,17 @@
     <hr>
 
     {% if data %}
-        {(data)}
+        {(data | safe)}
     {% endif %}
     
+    <form action="/external/" method="post">
+        {% csrf_token %}
+        Input Text:
+        <input type="text" name="param" required> <br> <br>
+        {{data_external}} <br> 
+            {{data1}}
+        <input type="submit" value="Execute External Python Script">
+    </form>
+
 </body>
 </html>
