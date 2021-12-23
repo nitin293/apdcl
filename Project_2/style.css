@@ -1,5 +1,5 @@
 *{
-    margin: 1em;
+    margin: 0em;
     padding: 0;
 }
 body{
@@ -40,7 +40,9 @@ table td{
     padding: 5px;
     align-content: center;
 }
-
+.container{
+    margin: 1em;
+}
 #dvCSV{
     text-align: center;
     align-content: center;

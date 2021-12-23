@@ -50,7 +50,7 @@ function Upload() {
                 // search on the basic of user input
             
             }
-            searchValue=document.getElementsByClassName('searchValue');
+            // searchValue=document.getElementsByClassName('searchValue');
             reader.readAsText(fileUpload.files[searchValue]);
         } else {
             alert("This browser does not support HTML5.");
