@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>APDCL Project 2</title>
+</head>
+
+<body>
+    <form method="POST" action="select" enctype="multipart/form-data">
+        {% csrf_token %}
+
+        Upload CSV: <input type="file" name="file"><br>
+
+        Enter Columns (eg: colA,colB): <input type="text" name="columns"><br>
+        Enter Start Row (eg: 1): <input type="text" name="r1">
+        Enter End Row (eg: 8): <input type="text" name="r2"><br>
+
+        <input type="submit" value="submit">
+
+    </form>
+
+</body>
+</html>
